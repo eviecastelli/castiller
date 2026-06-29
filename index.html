@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🔒 Uma Última Chave</title>
 
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg,#ffe6ef,#fff7fa);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.caixa{
+    background:white;
+    width:350px;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+h1{
+    font-size:50px;
+}
+
+h2{
+    margin-top:10px;
+    color:#ff5c8d;
+}
+
+p{
+    margin-top:15px;
+    color:#666;
+    line-height:1.5;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    margin-top:25px;
+    border-radius:12px;
+    border:1px solid #ddd;
+    font-size:16px;
+    text-align:center;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    margin-top:20px;
+    border:none;
+    border-radius:12px;
+    background:#ff5c8d;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#ff3d77;
+}
+
+#erro{
+    margin-top:18px;
+    color:#d62828;
+    font-weight:bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="caixa">
+
+<h1>🔒</h1>
+
+<h2>Você chegou até aqui!</h2>
+
+<p>
+Agora só falta descobrir a senha para desbloquear a sua surpresa.
+</p>
+
+<input
+type="password"
+id="senha"
+placeholder="Digite a senha">
+
+<button onclick="verificar()">
+Desbloquear
+</button>
+
+<p id="erro"></p>
+
+</div>
+
+<script>
+
+function verificar(){
+
+let senha=document.getElementById("senha").value;
+
+if(senha==="07071103"){
+
+window.location.href="https://t.me/+t61T15n8x8kzMmUx";
+
+}else{
+
+document.getElementById("erro").innerHTML="💗 Essa não é a senha... tente novamente.";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
